@@ -2,7 +2,7 @@ name: release
 on:
   push:
     branches:
-      - electron
+      - main
 jobs:
   release:
     runs-on: ${{ matrix.os }}
