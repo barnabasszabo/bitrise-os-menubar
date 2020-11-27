@@ -1,6 +1,6 @@
 {
   "name": "bitrise-os-menubar",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "main.js",
   "private": true,
 
@@ -22,7 +22,7 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-		"build": "electron-builder --mac --publish always ",
+		"build": "electron-builder --mac --windows --linux --publish always ",
 		"release": "electron-builder --mac --windows --linux --publish always"
   },
 

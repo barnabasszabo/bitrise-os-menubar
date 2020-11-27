@@ -1,13 +1,11 @@
+const path = require(`path`);
 const { menubar } = require('menubar');
 
 const mb = menubar({
 	index: `https://bitrise.io`,
-    browserWindow: { height: 800, width: 700 },
-    webPreferences: {
-        contextIsolation: true
-    },
+    browserWindow: { height: 800, width: 700 }
 });
 
 mb.on('ready', () => {
-    mb.tray.setImage('bitrise-tray-icon-20.png');
+    mb.tray.setImage( path.join(__dirname, 'bitrise-tray-icon-20.png') );
 });
