@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "main.js",
   "private": true,
+  "homepage": "http://szabobarnabas.hu",
+  "author": {
+    "name": "Barnabas Szabo",
+    "email": "git@szabobarnabas.hu"
+  },
   "build": {
     "appId": "hu.szabobarnabas.bitrise-os-menubar",
     "productName": "Bitrise OS Menubar",
