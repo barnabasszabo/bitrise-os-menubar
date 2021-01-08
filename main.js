@@ -6,6 +6,8 @@ const mb = menubar({
     browserWindow: { height: 800, width: 700 }
 });
 
+mb.app.dock.hide();
+
 mb.on('ready', () => {
     mb.tray.setImage( path.join(__dirname, 'bitrise-tray-icon-20.png') );
 });
