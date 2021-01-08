@@ -22,8 +22,8 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux --publish always ",
-    "release": "electron-builder --mac --windows --linux --publish always"
+    "build": "electron-builder build --publish always ",
+    "release": "npm run build"
   },
   "devDependencies": {
     "electron": "^11.0.3",
